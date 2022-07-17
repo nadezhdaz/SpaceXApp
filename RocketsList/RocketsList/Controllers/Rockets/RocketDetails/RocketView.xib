@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jkg-ER-mlm" customClass="RocketView" customModule="RocketsList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="406"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UUh-OR-AUQ" customClass="ImageLoader" customModule="RocketsList" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="374" height="242"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UUh-OR-AUQ" secondAttribute="height" multiplier="374:240" constant="-3.1166666666666742" id="EM1-rh-Bl4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fr-zz-tb7" userLabel="Header Label">
+                    <rect key="frame" x="160" y="351" width="85" height="16.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="VJw-Gs-Cbr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buQ-1q-7Rx" userLabel="Info Label">
+                    <rect key="frame" x="275" y="369.5" width="34.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                    <color key="textColor" name="State Gray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gW-Om-1iB" userLabel="Header Label">
+                    <rect key="frame" x="275" y="351" width="53.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqe-sL-gTQ" userLabel="Info Label">
+                    <rect key="frame" x="20" y="369.5" width="34.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                    <color key="textColor" name="State Gray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mz-k1-pPc" userLabel="Title Label">
+                    <rect key="frame" x="20" y="296" width="59" height="28"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="24"/>
+                    <color key="textColor" name="Smoky Black"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First launch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYk-IL-z2z" userLabel="Header Label">
+                    <rect key="frame" x="20" y="351" width="110" height="16.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="x7f-bC-NJG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8L-Xp-aJa" userLabel="Info Label">
+                    <rect key="frame" x="160" y="369.5" width="34.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                    <color key="textColor" name="State Gray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Irb-l2-NnQ"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8fr-zz-tb7" firstAttribute="leading" secondItem="EYk-IL-z2z" secondAttribute="trailing" constant="30" id="8er-Yt-kFn"/>
+                <constraint firstItem="EYk-IL-z2z" firstAttribute="leading" secondItem="4mz-k1-pPc" secondAttribute="leading" id="Cjr-m3-s3O"/>
+                <constraint firstItem="2gW-Om-1iB" firstAttribute="centerY" secondItem="8fr-zz-tb7" secondAttribute="centerY" id="DQp-fC-duJ"/>
+                <constraint firstItem="Mqe-sL-gTQ" firstAttribute="leading" secondItem="EYk-IL-z2z" secondAttribute="leading" id="HQe-aP-TBM"/>
+                <constraint firstItem="4mz-k1-pPc" firstAttribute="leading" secondItem="Irb-l2-NnQ" secondAttribute="leading" constant="20" id="JOX-hz-he7"/>
+                <constraint firstItem="Mqe-sL-gTQ" firstAttribute="top" secondItem="EYk-IL-z2z" secondAttribute="bottom" constant="2" id="Jel-Ls-FcN"/>
+                <constraint firstItem="Irb-l2-NnQ" firstAttribute="leading" secondItem="UUh-OR-AUQ" secondAttribute="leading" id="OT6-lu-UNy"/>
+                <constraint firstItem="EYk-IL-z2z" firstAttribute="top" secondItem="4mz-k1-pPc" secondAttribute="bottom" constant="27" id="PQM-ZY-VI5"/>
+                <constraint firstItem="Irb-l2-NnQ" firstAttribute="trailing" secondItem="UUh-OR-AUQ" secondAttribute="trailing" id="ZK3-yp-48j"/>
+                <constraint firstItem="4mz-k1-pPc" firstAttribute="top" secondItem="UUh-OR-AUQ" secondAttribute="bottom" constant="10" id="cRP-fd-5cM"/>
+                <constraint firstItem="t8L-Xp-aJa" firstAttribute="leading" secondItem="8fr-zz-tb7" secondAttribute="leading" id="dsh-X1-ZIb"/>
+                <constraint firstItem="Irb-l2-NnQ" firstAttribute="top" secondItem="UUh-OR-AUQ" secondAttribute="top" id="gG2-vD-INC"/>
+                <constraint firstItem="8fr-zz-tb7" firstAttribute="centerY" secondItem="EYk-IL-z2z" secondAttribute="centerY" id="kbC-I7-Hrv"/>
+                <constraint firstItem="2gW-Om-1iB" firstAttribute="leading" secondItem="8fr-zz-tb7" secondAttribute="trailing" constant="30" id="mzR-nN-0ln"/>
+                <constraint firstItem="t8L-Xp-aJa" firstAttribute="centerY" secondItem="Mqe-sL-gTQ" secondAttribute="centerY" id="pVQ-xy-Rp6"/>
+                <constraint firstItem="buQ-1q-7Rx" firstAttribute="centerY" secondItem="t8L-Xp-aJa" secondAttribute="centerY" id="qLU-oe-BbP"/>
+                <constraint firstItem="buQ-1q-7Rx" firstAttribute="leading" secondItem="2gW-Om-1iB" secondAttribute="leading" id="vDQ-06-CXk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="firstLaunchLabel" destination="Mqe-sL-gTQ" id="OUi-R1-fSo"/>
+                <outlet property="headerImageView" destination="UUh-OR-AUQ" id="Qfr-x3-1JU"/>
+                <outlet property="launchCostLabel" destination="t8L-Xp-aJa" id="gaF-kN-aML"/>
+                <outlet property="successLabel" destination="buQ-1q-7Rx" id="0Yh-mG-VGR"/>
+                <outlet property="titleLabel" destination="4mz-k1-pPc" id="IXP-cj-dCu"/>
+            </connections>
+            <point key="canvasLocation" x="-455.07246376811599" y="18.75"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Smoky Black">
+            <color red="0.078431372549019607" green="0.078431372549019607" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="State Gray">
+            <color red="0.41960784313725491" green="0.44313725490196076" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

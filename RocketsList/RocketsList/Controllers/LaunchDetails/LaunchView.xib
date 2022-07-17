@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LaunchView" customModule="RocketsList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="145"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTD-Gt-nHd" userLabel="Date Label">
+                    <rect key="frame" x="20" y="67" width="157" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18.5" id="bk5-Cu-Pa1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6t-BT-k0o" customClass="ShadowView" customModule="RocketsList" customModuleProvider="target">
+                    <rect key="frame" x="247" y="26" width="110" height="102"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kpw-bi-Qd1" customClass="ImageLoader" customModule="RocketsList" customModuleProvider="target">
+                            <rect key="frame" x="8" y="9" width="94" height="84"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" name="CustomWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Kpw-bi-Qd1" secondAttribute="bottom" constant="9" id="DL5-5q-sKS"/>
+                        <constraint firstItem="Kpw-bi-Qd1" firstAttribute="top" secondItem="y6t-BT-k0o" secondAttribute="top" constant="9" id="Nr8-3b-lZl"/>
+                        <constraint firstItem="Kpw-bi-Qd1" firstAttribute="leading" secondItem="y6t-BT-k0o" secondAttribute="leadingMargin" id="Rey-nZ-aGc"/>
+                        <constraint firstItem="Kpw-bi-Qd1" firstAttribute="trailing" secondItem="y6t-BT-k0o" secondAttribute="trailingMargin" id="eim-s8-V6S"/>
+                        <constraint firstItem="Kpw-bi-Qd1" firstAttribute="centerY" secondItem="y6t-BT-k0o" secondAttribute="centerY" id="fJI-HT-Exn"/>
+                        <constraint firstAttribute="width" constant="110" id="trg-WQ-zwp"/>
+                        <constraint firstAttribute="height" constant="102" id="uwb-Zg-Lj3"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fJI-HT-Exn"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFK-xY-m4q" userLabel="Name Label">
+                    <rect key="frame" x="20" y="24" width="59" height="28"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tln-zN-ayQ" userLabel="Upcoming Image View">
+                    <rect key="frame" x="20" y="95" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Tln-zN-ayQ" secondAttribute="height" multiplier="1:1" id="Jh8-gT-XAp"/>
+                        <constraint firstAttribute="width" constant="32" id="ngr-9T-1Oi"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJm-vs-HYs" customClass="ShadowView" customModule="RocketsList" customModuleProvider="target">
+                    <rect key="frame" x="62" y="94.5" width="58" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7b-CN-8ne" userLabel="Launch Number Label">
+                            <rect key="frame" x="8" y="4" width="42" height="23"/>
+                            <color key="backgroundColor" name="CustomWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="W6z-GC-wZr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                            <color key="textColor" name="Cyan Process"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="T7b-CN-8ne" firstAttribute="top" secondItem="DJm-vs-HYs" secondAttribute="top" constant="4" id="3F4-dP-XuI"/>
+                        <constraint firstAttribute="bottom" secondItem="T7b-CN-8ne" secondAttribute="bottom" constant="4" id="4Gm-2t-sWp"/>
+                        <constraint firstItem="T7b-CN-8ne" firstAttribute="leading" secondItem="DJm-vs-HYs" secondAttribute="leading" constant="8" id="BwT-Lz-pm7"/>
+                        <constraint firstAttribute="trailing" secondItem="T7b-CN-8ne" secondAttribute="trailing" constant="8" id="LpZ-5F-sI3"/>
+                        <constraint firstItem="T7b-CN-8ne" firstAttribute="centerX" secondItem="DJm-vs-HYs" secondAttribute="centerX" id="jPS-qb-qaW"/>
+                        <constraint firstItem="T7b-CN-8ne" firstAttribute="centerY" secondItem="DJm-vs-HYs" secondAttribute="centerY" id="zS9-FA-WsS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="YTD-Gt-nHd" firstAttribute="top" secondItem="NFK-xY-m4q" secondAttribute="bottom" constant="15" id="1w6-4i-0A0"/>
+                <constraint firstItem="DJm-vs-HYs" firstAttribute="top" secondItem="YTD-Gt-nHd" secondAttribute="bottom" constant="9" id="2NE-re-BnG"/>
+                <constraint firstItem="Tln-zN-ayQ" firstAttribute="bottom" secondItem="y6t-BT-k0o" secondAttribute="bottom" constant="9" id="735-Ty-ulN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="y6t-BT-k0o" secondAttribute="top" constant="18" id="APh-yw-ire"/>
+                <constraint firstItem="YTD-Gt-nHd" firstAttribute="leading" secondItem="Tln-zN-ayQ" secondAttribute="leading" id="Ev7-mf-q83"/>
+                <constraint firstItem="Tln-zN-ayQ" firstAttribute="top" secondItem="YTD-Gt-nHd" secondAttribute="bottom" constant="9.5" id="I75-Ac-NNy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Tln-zN-ayQ" secondAttribute="bottom" constant="18" id="Qwg-OU-0A0"/>
+                <constraint firstItem="DJm-vs-HYs" firstAttribute="leading" secondItem="Tln-zN-ayQ" secondAttribute="trailing" constant="10" id="VST-Q4-uMX"/>
+                <constraint firstItem="NFK-xY-m4q" firstAttribute="leading" secondItem="YTD-Gt-nHd" secondAttribute="leading" id="XCt-hG-GT1"/>
+                <constraint firstItem="NFK-xY-m4q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="YLa-ru-V0c"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="NFK-xY-m4q" secondAttribute="top" constant="20" id="dP8-Ms-5pa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="y6t-BT-k0o" secondAttribute="trailing" constant="20" id="fkF-oX-fgx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="y6t-BT-k0o" secondAttribute="bottom" constant="17" id="szd-Mv-4ee"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="735-Ty-ulN"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="dateLabel" destination="YTD-Gt-nHd" id="2eQ-be-kkh"/>
+                <outlet property="launchNumberLabel" destination="T7b-CN-8ne" id="h6a-h7-9NX"/>
+                <outlet property="nameLabel" destination="NFK-xY-m4q" id="Nqq-qf-7wa"/>
+                <outlet property="patchImageView" destination="Kpw-bi-Qd1" id="qNz-SA-pgh"/>
+                <outlet property="upcomingImageView" destination="Tln-zN-ayQ" id="n7W-MI-1MP"/>
+            </connections>
+            <point key="canvasLocation" x="-31.159420289855074" y="-165.06696428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="CustomWhite">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Cyan Process">
+            <color red="0.0" green="0.6470588235294118" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
